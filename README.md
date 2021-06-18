@@ -18,4 +18,4 @@ $ sudo docker network create --subnet=192.168.60.0/24 --gateway=192.168.60.1 --o
 3.Create a docker as a external client,name it HostU,deploy it on extranet:  
 $ sudo docker run -it --name=HostU --hostname=HostU --net=extranet --ip=10.0.2.7 --privileged "seedubuntu" /bin/bash  
 4.Create a docker as a internal server,name it HostV,deploy it on intranet:  
-$sudo docker run -it --name=HostV --hostname=HostV --net=intranet --ip=192.168.60.101 --privileged "seedubuntu" /bin/bash  
+$ sudo docker run -it --name=HostV --hostname=HostV --net=intranet --ip=192.168.60.101 --privileged "seedubuntu" /bin/bash  
